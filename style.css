@@ -24,7 +24,7 @@ body {
     justify-content: center; */
     background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
     background-repeat: no-repeat, no-repeat;
-     background-position: calc(50% - 489px) -520px, calc(50% + 489px) calc(100% + 500px);
+    background-position: calc(50% - 489px) -520px, calc(50% + 435px) calc(100% + 580px);
 }
 
 .card{
@@ -36,6 +36,7 @@ body {
     background-color: var(--white);
     border-radius: 0.75rem;
     overflow: hidden;
+    box-shadow: 0px 10px 8px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card > *{
@@ -128,6 +129,16 @@ body {
     letter-spacing: 2px;
 }
 
+@media screen and (min-width: 1200px) {
+    
+    body{
+        background-position: calc(50% - 520px) -520px, calc(50% + 489px) calc(100% + 630px);
+    }
+
+    .card{
+        grid-template-columns: 340px;
+    }
+}
 
 
 
@@ -135,8 +146,12 @@ body {
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding-top: 2rem;
+    word-spacing: 3px;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    color: var(--white);
+    text-decoration: none;
 }
